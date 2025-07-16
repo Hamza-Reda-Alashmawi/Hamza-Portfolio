@@ -9,18 +9,27 @@ body {
 
 .nav-bar {
   display: flex;
-  position: fixed;
-  z-index: 999;
+  flex-wrap: nowrap;          
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
   width: 100%;
-  left: 0;
-  top: 0;
   background-color: black;
-  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
   box-sizing: border-box;
 }
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: nowrap;          
+  overflow-x: auto;          
+}
+
 
 .fake-border-line {
   height: 2px;
@@ -50,11 +59,7 @@ body {
   color: whitesmoke;
 }
 
-.nav-links {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
+
 
 .nav-links a {
   text-decoration: none;
