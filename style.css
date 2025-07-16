@@ -3,19 +3,34 @@
 body {
   background-color: black;
   margin: 0;
-  padding: 0;
+  padding-top: 70px;
   font-family: 'TikTok Sans', sans-serif;
 }
 
-
 .nav-bar {
   display: flex;
+  position: fixed;
+  z-index: 999;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  border-bottom: 2px solid #333;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
+  height: 70px; /* Add or increase height if needed */
+  box-sizing: border-box;
 }
 
+
+.fake-border-line {
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
 
 .logo-section {
   display: flex;
@@ -36,13 +51,11 @@ body {
   color: whitesmoke;
 }
 
-
 .nav-links {
   display: flex;
   gap: 30px;
   align-items: center;
 }
-
 
 .nav-links a {
   text-decoration: none;
@@ -53,23 +66,47 @@ body {
   transition: all 0.3s ease;
 }
 
-
 .nav-links a:hover {
-  color: #0db90d;
+  color: #9ea9e3;
   transform: scale(1.1);
 }
 
-
 .a-border {
-  background-color: #0db90d;
+  background-color: #8477f8;
   color: black;
-  border: 1px solid #0db90d;
+  border: 1px solid #7b97ec;
   font-weight: bold;
 }
-
 
 .a-border:hover {
   background-color: white;
   transform: scale(1.1);
   color: white;
+}
+
+.home {
+  border: 2px solid white;
+  padding-top: 500px;
+  margin: 50px;
+  margin-left: 320px;
+  width: 900px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuADbu42MoC6pRqnavAuvazBg_afnnuW4_bYIQekCU4JyB5moMLXLFHHFmcmsT1IyLE8ZPpsyX9zdbNPmC7qYovxNxnxjzsjxkaO5lyMth_mKnxwckC0JHE1lh_QSDrBbUwm-bympS6D4KxPI0DeiFiqEgnmYHyNw9Yb99BUnQDz9S0jz530eg4ZgFs3rIVc0v8TrxKyfSf7flwW2aMmilcf5bBWgoc9TB7PNgDAxNozlPcqiWrMZsWXMo26Ui8iiq512K9gpNTYMBQ");
+  background-size: cover;
+  background-position: center;
+}
+
+.h1-home {
+  position: relative;
+  bottom: 200px;
+  padding-left: 20px;
+  color: whitesmoke;
+  font-size: 50px;
+}
+
+.h3-home {
+  position: relative;
+  bottom: 190px;
+  padding-left: 20px;
+  color: whitesmoke;
+  font-size: 35px;
 }
