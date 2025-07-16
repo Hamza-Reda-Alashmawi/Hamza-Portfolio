@@ -18,10 +18,9 @@ body {
   left: 0;
   top: 0;
   background-color: black;
-  height: 70px; /* Add or increase height if needed */
+  height: 70px;
   box-sizing: border-box;
 }
-
 
 .fake-border-line {
   height: 2px;
@@ -73,22 +72,24 @@ body {
 
 .a-border {
   background-color: #8477f8;
-  color: black;
+  color: white;
   border: 1px solid #7b97ec;
   font-weight: bold;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 8px;
 }
 
 .a-border:hover {
   background-color: white;
   transform: scale(1.1);
-  color: white;
+  color: black;
 }
 
 .home {
   border: 2px solid white;
   padding-top: 500px;
-  margin: 50px;
-  margin-left: 320px;
+  margin: 50px auto;
   width: 900px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuADbu42MoC6pRqnavAuvazBg_afnnuW4_bYIQekCU4JyB5moMLXLFHHFmcmsT1IyLE8ZPpsyX9zdbNPmC7qYovxNxnxjzsjxkaO5lyMth_mKnxwckC0JHE1lh_QSDrBbUwm-bympS6D4KxPI0DeiFiqEgnmYHyNw9Yb99BUnQDz9S0jz530eg4ZgFs3rIVc0v8TrxKyfSf7flwW2aMmilcf5bBWgoc9TB7PNgDAxNozlPcqiWrMZsWXMo26Ui8iiq512K9gpNTYMBQ");
   background-size: cover;
@@ -109,4 +110,95 @@ body {
   padding-left: 20px;
   color: whitesmoke;
   font-size: 35px;
+}
+
+
+
+@media (max-width: 1024px) {
+  .home {
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  .h1-home {
+    font-size: 40px;
+    bottom: 150px;
+  }
+
+  .h3-home {
+    font-size: 28px;
+    bottom: 140px;
+  }
+
+  .logo-word {
+    font-size: 22px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .home {
+    padding-top: 300px;
+  }
+
+  .h1-home {
+    font-size: 36px;
+    bottom: 100px;
+  }
+
+  .h3-home {
+    font-size: 24px;
+    bottom: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img img {
+    width: 30px;
+  }
+
+  .logo-word {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .a-border {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  .h1-home {
+    font-size: 30px;
+    bottom: 80px;
+  }
+
+  .h3-home {
+    font-size: 20px;
+    bottom: 70px;
+  }
 }
