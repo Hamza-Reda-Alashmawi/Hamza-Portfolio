@@ -5,9 +5,22 @@ body {
   margin: 0;
   padding-top: 70px;
   font-family: 'TikTok Sans', sans-serif;
+  animation: slideIn 0.3s ease-out;
 }
 
-/* ========== Navbar ========== */
+@keyframes slideIn {
+  from{
+    transform: translateX(30px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -81,7 +94,8 @@ body {
 
 /* ========== Home Section ========== */
 .home {
-  border: 2px solid white;
+  border: 2px solid black;
+  border-radius: 20px;
   padding-top: 500px;
   margin: 50px auto;
   width: 900px;
@@ -99,15 +113,36 @@ body {
   font-size: 50px;
 }
 
-.h3-home {
-  position: relative;
-  bottom: 190px;
-  padding-left: 20px;
-  color: whitesmoke;
-  font-size: 35px;
+.p-home {
+   color: whitesmoke;
+   font-size: 19px;
+   position: relative;
+   bottom: 110px;
+   padding: 20px;
 }
 
-/* ========== Responsive Design ========== */
+.a-home {
+  position: relative;
+  bottom: 100px;
+  left: 20px;
+  border: 1px solid #4d4dff;
+  border-radius: 7px;
+  background-color: #4d4dff;
+  font-size: 16px;
+  padding: 7px;
+  color: white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.a-home:hover{
+  background-color: #fff;
+  color: #4d4dff;
+  transform: scale(1);
+  font-size: 22px;
+}
+
+
 
 @media (max-width: 1024px) {
   .home {
