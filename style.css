@@ -13,7 +13,6 @@ body {
     transform: translateX(30px);
     opacity: 0;
   }
-
   to {
     transform: translateX(0);
     opacity: 1;
@@ -146,38 +145,277 @@ body {
   transform: scale(1.15);
   font-size: 19px;
 }
+
+/* Skills Section - Original Styles */
 .skills {
   background-color: #000000;
   border-radius: 5px;
   height: 100vh;
 }
+
 .skills-html {
   border: 1px solid whitesmoke;
   border-radius: 20px;
   background-color: whitesmoke;
   position: relative;
   top: 40px;
-  left: 40px;
+  left: 60px;
   width: 400px;
   height: 400px;
+  transition: transform 0.4s ease-out, background-color 0.3s, color 0.3s;
 }
+
 .html-icon {
   position: relative;
   top: 5px;
   left: 170px;
   font-size: 80px;
 }
+
 .html-h1 {
   position: relative;
   left: 160px;
 }
+
 .html-p {
   font-size: 16px;
   width: 300px;
   position: relative;
   left: 40px;
-  text-align:center;
+  text-align: center;
 }
+
+.skills-html:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.skills-css {
+  position: relative;
+  left: 600px;
+  bottom: 360px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 400px;
+  height: 400px;
+  transition: transform 0.4s ease-out, background-color 0.3s, color 0.3s;
+}
+
+.skills-css:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.css-icon {
+  font-size: 80px;
+  position: relative;
+  top: 5px;
+  left: 150px;
+}
+
+.css-h1 {
+  position: relative;
+  left: 150px;
+}
+
+.css-p {
+  position: relative;
+  left: 40px;
+  bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  width: 300px;
+}
+
+.skills-js {
+  position: relative;
+  bottom: 760px;
+  left: 1100px;
+  border: 1px solid whitesmoke;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 400px;
+  height: 400px;
+  transition: transform 0.4s ease-out, background-color 0.3s, color 0.3s;
+}
+
+.skills-js:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.js-icon {
+  font-size: 80px;
+  position: relative;
+  top: 5px;
+  left: 150px;
+}
+
+.js-h1 {
+  position: relative;
+  left: 170px;
+}
+
+.js-p {
+  position: relative;
+  left: 40px;
+  bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  width: 300px;
+}
+
+/* ===== SKILLS SECTION MEDIA QUERIES ===== */
+@media (max-width: 1300px) {
+  .skills-html {
+    left: 30px;
+    width: 350px;
+    height: 350px;
+  }
+  
+  .skills-css {
+    left: 450px;
+    bottom: 360px;
+    width: 350px;
+    height: 350px;
+  }
+  
+  .skills-js {
+    left: 870px;
+    bottom: 760px;
+    width: 350px;
+    height: 350px;
+  }
+  
+  .html-icon, .css-icon, .js-icon {
+    font-size: 70px;
+    left: 140px;
+  }
+  
+  .html-h1, .css-h1 {
+    left: 140px;
+  }
+  
+  .js-h1 {
+    left: 160px;
+  }
+  
+  .html-p, .css-p, .js-p {
+    width: 280px;
+    left: 35px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skills-html {
+    left: 20px;
+    width: 300px;
+    height: 320px;
+  }
+  
+  .skills-css {
+    left: 370px;
+    bottom: 360px;
+    width: 300px;
+    height: 320px;
+  }
+  
+  .skills-js {
+    left: 720px;
+    bottom: 760px;
+    width: 300px;
+    height: 320px;
+  }
+  
+  .html-icon, .css-icon, .js-icon {
+    font-size: 60px;
+    left: 120px;
+  }
+  
+  .html-h1, .css-h1 {
+    left: 120px;
+  }
+  
+  .js-h1 {
+    left: 140px;
+  }
+  
+  .html-p, .css-p, .js-p {
+    width: 250px;
+    left: 25px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  
+  .skills-html, .skills-css, .skills-js {
+    position: static;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    transform: none !important;
+  }
+  
+  .skills-css {
+    margin-top: 30px;
+    bottom: auto;
+    left: auto;
+  }
+  
+  .skills-js {
+    margin-top: 30px;
+    bottom: auto;
+    left: auto;
+  }
+  
+  .html-icon, .css-icon, .js-icon {
+    position: static;
+    margin: 10px auto;
+    text-align: center;
+  }
+  
+  .html-h1, .css-h1, .js-h1 {
+    position: static;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .html-p, .css-p, .js-p {
+    position: static;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-html, .skills-css, .skills-js {
+    width: 90%;
+    padding: 15px;
+  }
+  
+  .html-icon, .css-icon, .js-icon {
+    font-size: 50px;
+  }
+  
+  .html-h1, .css-h1, .js-h1 {
+    font-size: 24px;
+  }
+  
+  .html-p, .css-p, .js-p {
+    font-size: 14px;
+  }
+}
+
+/* Existing Media Queries (keep these at the end) */
 @media (max-width: 1024px) {
   .home {
     width: 90%;
