@@ -6,6 +6,7 @@ body {
   padding-top: 70px;
   font-family: 'TikTok Sans', sans-serif;
   animation: slideIn 0.3s ease-out;
+  overflow-x: hidden;
 }
 
 @keyframes slideIn {
@@ -13,7 +14,6 @@ body {
     transform: translateX(30px);
     opacity: 0;
   }
-
   to {
     transform: translateX(0);
     opacity: 1;
@@ -44,8 +44,6 @@ body {
 .logo-img img {
   width: 40px;
   height: auto;
-  position: relative;
-  top: 2px;
 }
 
 .logo-word {
@@ -62,11 +60,9 @@ body {
   flex-wrap: nowrap;
   scrollbar-width: none;
 }
-
 .nav-links::-webkit-scrollbar {
   display: none;
 }
-
 .nav-links a {
   text-decoration: none;
   color: whitesmoke;
@@ -77,7 +73,6 @@ body {
   white-space: nowrap;
   flex: 0 0 auto;
 }
-
 .nav-links a:hover {
   color: #9ea9e3;
   transform: scale(1.1);
@@ -92,20 +87,19 @@ body {
   font-size: 14px;
   border-radius: 8px;
 }
-
 .a-border:hover {
   background-color: white;
   transform: scale(1.1);
   color: black;
 }
 
+/* HOME */
 .home {
-  border: 2px solid black;
   border-radius: 20px;
   padding-top: 500px;
   margin: 50px auto;
-  width: 900px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuADbu42MoC6pRqnavAuvazBg_afnnuW4_bYIQekCU4JyB5moMLXLFHHFmcmsT1IyLE8ZPpsyX9zdbNPmC7qYovxNxnxjzsjxkaO5lyMth_mKnxwckC0JHE1lh_QSDrBbUwm-bympS6D4KxPI0DeiFiqEgnmYHyNw9Yb99BUnQDz9S0jz530eg4ZgFs3rIVc0v8TrxKyfSf7flwW2aMmilcf5bBWgoc9TB7PNgDAxNozlPcqiWrMZsWXMo26Ui8iiq512K9gpNTYMBQ");
+  width: 90%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuADbu42MoC6pRqnavAuvazBg_afnnuW4_bYIQekCU4JyB5moMLXLFHHFmcmsT1IyLE8ZPpsyX9zdbNPmC7qYovxNxnxjzsjxkaO5lyMth_mKnxwckC0JHE1lh_QSDrBbUwm-bympS6D4KxPI0DeiFiqEgnmYHyNw9Yb99BUnQDz9S0jz530eg4ZgFs3rIVc0v8TrxKyfSf7flwW2aMmilcf5bBWgoc9TB7PNgDAxNozlPcqiWrMZsWXMo26Ui8iiq512K9gpNTYMBQ");
   background-size: cover;
   background-position: center;
 }
@@ -117,7 +111,6 @@ body {
   color: whitesmoke;
   font-size: 50px;
 }
-
 .p-home {
   color: whitesmoke;
   font-size: 19px;
@@ -125,7 +118,6 @@ body {
   bottom: 190px;
   padding: 20px;
 }
-
 .a-home {
   position: relative;
   bottom: 170px;
@@ -139,7 +131,6 @@ body {
   transition: all 0.3s ease;
   text-decoration: none;
 }
-
 .a-home:hover {
   background-color: #fff;
   color: #4d4dff;
@@ -147,131 +138,70 @@ body {
   font-size: 19px;
 }
 
+/* SKILLS SECTION */
 .skills {
-  background-color: #000000;
-  border-radius: 5px;
-  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background-color: #000;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-.skills-html {
-  border: 1px solid whitesmoke;
-  border-radius: 20px;
-  background-color: whitesmoke;
-  position: relative;
-  top: 40px;
-  left: 60px;
-  width: 400px;
-  height: 400px;
-  transition: transform 0.4s ease-out, background-color 0.3s, color 0.3s;
+.skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.html-icon {
-  position: relative;
-  top: 5px;
-  left: 170px;
-  font-size: 80px;
-}
-
-.html-h1 {
-  position: relative;
-  left: 160px;
-}
-
-.html-p {
-  font-size: 16px;
-  width: 300px;
-  position: relative;
-  left: 40px;
-  text-align: center;
-}
-
-.skills-html:hover {
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.skills-css {
-  position: relative;
-  left: 600px;
-  bottom: 360px;
-  border: 1px solid #ffffff;
-  border-radius: 20px;
-  background-color: whitesmoke;
-  width: 400px;
-  height: 400px;
-  transition: transform 0.4s ease-out, background-color 0.3s, color 0.3s;
-}
-
-.skills-css:hover {
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.css-icon {
-  font-size: 80px;
-  position: relative;
-  top: 5px;
-  left: 150px;
-}
-
-.css-h1 {
-  position: relative;
-  left: 150px;
-}
-
-.css-p {
-  position: relative;
-  left: 40px;
-  bottom: 10px;
-  text-align: center;
-  font-size: 16px;
-  width: 300px;
-}
-
+.skills-html,
+.skills-css,
 .skills-js {
-  position: relative;
-  bottom: 760px;
-  left: 1100px;
+  width: 300px;
+  height: 400px;
+  background-color: whitesmoke;
   border: 1px solid whitesmoke;
   border-radius: 20px;
-  background-color: whitesmoke;
-  width: 400px;
-  height: 400px;
-  transition: transform 0.4s ease-out, background-color 0.3s, color 0.3s;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.4s ease-out;
 }
 
+.skills-html:hover,
+.skills-css:hover,
 .skills-js:hover {
-  transform: scale(1.1);
-  transition: 1s;
+  transform: scale(1.05);
 }
 
+.html-icon,
+.css-icon,
 .js-icon {
   font-size: 80px;
-  position: relative;
-  top: 5px;
-  left: 150px;
+  margin-bottom: 20px;
 }
 
+.html-h1,
+.css-h1,
 .js-h1 {
-  position: relative;
-  left: 170px;
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
+.html-p,
+.css-p,
 .js-p {
-  position: relative;
-  left: 40px;
-  bottom: 10px;
-  text-align: center;
   font-size: 16px;
-  width: 300px;
+  color: #222;
+  text-align: center;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 1024px) {
-  .home {
-    width: 90%;
-    padding-top: 350px;
-  }
-
   .h1-home {
     font-size: 40px;
     bottom: 150px;
@@ -297,10 +227,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .home {
-    padding-top: 300px;
-  }
-
   .h1-home {
     font-size: 36px;
     bottom: 100px;
@@ -310,16 +236,6 @@ body {
     gap: 25px;
   }
 
-  .nav-links a {
-    font-size: 13px;
-    padding: 6px 10px;
-  }
-
-  .a-border {
-    font-size: 12px;
-    padding: 5px 9px;
-  }
-
   .a-home {
     font-size: 14px;
     padding: 6px 10px;
@@ -327,6 +243,11 @@ body {
 
   .a-home:hover {
     font-size: 17px;
+  }
+
+  .skills-content {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -346,10 +267,6 @@ body {
   .nav-links a {
     font-size: 12px;
     padding: 5px 8px;
-  }
-
-  .home {
-    padding-top: 250px;
   }
 
   .h1-home {
