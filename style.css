@@ -200,11 +200,10 @@ body {
   text-align: center;
 }
 
-/* MEDIA QUERIES */
+/* أجهزة التابلت الكبيرة واللابتوب */
 @media (max-width: 1024px) {
-  .h1-home {
-    font-size: 40px;
-    bottom: 150px;
+  .nav-bar {
+    padding: 10px 20px;
   }
 
   .logo-word {
@@ -212,83 +211,139 @@ body {
   }
 
   .nav-links {
-    gap: 30px;
+    gap: 25px;
   }
 
   .nav-links a {
     font-size: 14px;
-    padding: 7px 12px;
+    padding: 6px 10px;
   }
 
   .a-border {
     font-size: 13px;
-    padding: 5px 10px;
+    padding: 5px 9px;
+  }
+
+  .home {
+    padding-top: 400px;
+  }
+
+  .h1-home {
+    font-size: 38px;
+    bottom: 160px;
+  }
+
+  .p-home {
+    font-size: 17px;
+    padding: 15px;
+  }
+
+  .skills-html,
+  .skills-css,
+  .skills-js {
+    height: 380px;
   }
 }
 
+/* أجهزة التابلت الصغيرة */
 @media (max-width: 768px) {
-  .h1-home {
-    font-size: 36px;
-    bottom: 100px;
+  .nav-bar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
   }
 
   .nav-links {
-    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .home {
+    padding-top: 350px;
+  }
+
+  .h1-home {
+    font-size: 32px;
+    bottom: 120px;
   }
 
   .a-home {
     font-size: 14px;
-    padding: 6px 10px;
-  }
-
-  .a-home:hover {
-    font-size: 17px;
+    padding: 6px 12px;
   }
 
   .skills-content {
     flex-direction: column;
     align-items: center;
   }
+
+  .skills-html,
+  .skills-css,
+  .skills-js {
+    width: 90%;
+    height: auto;
+  }
 }
 
+/* الموبايلات */
 @media (max-width: 480px) {
-  .nav-bar {
-    padding: 8px 15px;
-  }
-
   .logo-word {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .nav-links {
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .nav-links a {
-    font-size: 12px;
-    padding: 5px 8px;
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  .home {
+    padding-top: 300px;
   }
 
   .h1-home {
-    font-size: 30px;
-    bottom: 80px;
+    font-size: 26px;
+    bottom: 100px;
   }
 
   .p-home {
-    font-size: 16px;
+    font-size: 15px;
+    padding: 10px;
   }
 
   .a-home {
     font-size: 13px;
-    padding: 6px 9px;
+    padding: 6px 10px;
   }
 
-  .a-home:hover {
-    font-size: 15px;
+  .skills-html,
+  .skills-css,
+  .skills-js {
+    width: 100%;
+    padding: 15px;
   }
 
-  .a-border {
-    font-size: 12px;
-    padding: 4px 8px;
+  .html-icon,
+  .css-icon,
+  .js-icon {
+    font-size: 60px;
+  }
+
+  .html-h1,
+  .css-h1,
+  .js-h1 {
+    font-size: 22px;
+  }
+
+  .html-p,
+  .css-p,
+  .js-p {
+    font-size: 14px;
   }
 }
