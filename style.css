@@ -258,6 +258,8 @@ body {
 
   .skills {
     padding: 30px 10px;
+    width: 100%;
+    height: 100vh;
   }
 
   .skills-html,
