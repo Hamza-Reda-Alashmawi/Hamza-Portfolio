@@ -365,4 +365,12 @@ body {
     font-size: 13px;
   }
 }
-
+/* Fix border color for skills cards on mobile */
+@media (max-width: 480px) {
+  .skills-html,
+  .skills-css,
+  .skills-js {
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+}
