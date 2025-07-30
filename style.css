@@ -196,7 +196,7 @@ body {
 .css-p,
 .js-p {
   font-size: 16px;
-  color: #222;
+  color: #ffff;
   text-align: center;
 }
 
@@ -267,3 +267,89 @@ body {
     font-size: 14px;
   }
 }
+@media (max-width: 480px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    height: auto;
+  }
+
+  
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .logo-word {
+    display: none;
+  }
+  .nav-links a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .home {
+    padding-top: 250px;
+    margin: 20px auto;
+    width: 95%;
+    border-radius: 10px;
+  }
+
+  .h1-home {
+    font-size: 28px;
+    bottom: 100px;
+    padding-left: 10px;
+  }
+
+  .p-home {
+    font-size: 14px;
+    bottom: 90px;
+    padding: 10px;
+  }
+
+  .a-home {
+    font-size: 14px;
+    padding: 6px 12px;
+    bottom: 80px;
+    left: 10px;
+  }
+
+  .skills {
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .skills-html,
+  .skills-css,
+  .skills-js {
+    width: 100%;
+    height: auto;
+    padding: 15px 10px;
+  }
+
+  .html-icon,
+  .css-icon,
+  .js-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .html-h1,
+  .css-h1,
+  .js-h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .html-p,
+  .css-p,
+  .js-p {
+    font-size: 13px;
+  }
+}
+
