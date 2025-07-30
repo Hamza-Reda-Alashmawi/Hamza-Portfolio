@@ -200,83 +200,45 @@ body {
   text-align: center;
 }
 
-/* أجهزة التابلت الكبيرة واللابتوب */
-@media (max-width: 1024px) {
-  .nav-bar {
-    padding: 10px 20px;
-  }
-
-  .logo-word {
-    font-size: 22px;
-  }
-
-  .nav-links {
-    gap: 25px;
-  }
-
-  .nav-links a {
-    font-size: 14px;
-    padding: 6px 10px;
-  }
-
-  .a-border {
-    font-size: 13px;
-    padding: 5px 9px;
-  }
-
-  .home {
-    padding-top: 400px;
-  }
-
-  .h1-home {
-    font-size: 38px;
-    bottom: 160px;
-  }
-
-  .p-home {
-    font-size: 17px;
-    padding: 15px;
-  }
-
-  .skills-html,
-  .skills-css,
-  .skills-js {
-    height: 380px;
-  }
-}
-
-/* أجهزة التابلت الصغيرة */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .nav-bar {
     flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
     height: auto;
-    padding: 15px;
   }
 
   .nav-links {
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    gap: 20px;
     margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .home {
-    padding-top: 350px;
+    padding-top: 300px;
+    margin: 20px auto;
   }
 
   .h1-home {
     font-size: 32px;
-    bottom: 120px;
+    bottom: 100px;
+  }
+
+  .p-home {
+    font-size: 16px;
+    bottom: 90px;
   }
 
   .a-home {
     font-size: 14px;
-    padding: 6px 12px;
+    bottom: 80px;
   }
 
-  .skills-content {
-    flex-direction: column;
-    align-items: center;
+  .skills {
+    padding: 30px 10px;
   }
 
   .skills-html,
@@ -284,50 +246,7 @@ body {
   .skills-js {
     width: 90%;
     height: auto;
-  }
-}
-
-/* الموبايلات */
-@media (max-width: 480px) {
-  .logo-word {
-    font-size: 18px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-links a {
-    font-size: 13px;
-    padding: 5px 10px;
-  }
-
-  .home {
-    padding-top: 300px;
-  }
-
-  .h1-home {
-    padding-bottom: 20px;
-    font-size: 26px;
-    bottom: 100px;
-  }
-
-  .p-home {
-    font-size: 15px;
-    padding: 10px;
-  }
-
-  .a-home {
-    font-size: 13px;
-    padding: 6px 10px;
-  }
-
-  .skills-html,
-  .skills-css,
-  .skills-js {
-    width: 100%;
-    padding: 15px;
+    padding: 20px 10px;
   }
 
   .html-icon,
