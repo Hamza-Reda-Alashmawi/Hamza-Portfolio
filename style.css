@@ -164,8 +164,9 @@ body {
 .skills-js {
   width: 300px;
   height: 400px;
+  border: 1px solid #ccc; 
   background-color: whitesmoke;
-  border: 1px solid #ccc; /* تصحيح اللون */
+  /* تصحيح اللون */
   border-radius: 20px;
   padding: 20px;
   text-align: center;
