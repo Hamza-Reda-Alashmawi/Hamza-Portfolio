@@ -268,12 +268,14 @@ body {
   }
 }
 @media (max-width: 480px) {
-  .nav-bar {
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 15px;
-    height: auto;
-  }
+ .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  height: auto;
+ }
+
 
   
 
