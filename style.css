@@ -343,6 +343,8 @@ body {
     width: 100%;
     height: auto;
     padding: 15px 10px;
+    border: 1px solid #000000;
+    background-color: #fff;
   }
 
   .html-icon,
@@ -363,14 +365,5 @@ body {
   .css-p,
   .js-p {
     font-size: 13px;
-  }
-}
-/* Fix border color for skills cards on mobile */
-@media (max-width: 480px) {
-  .skills-html,
-  .skills-css,
-  .skills-js {
-    border: 1px solid #ccc;
-    background-color: #fff;
   }
 }
