@@ -120,6 +120,19 @@ main {
   color: whitesmoke;
   font-size: 50px;
 }
+.ceo{
+  color: whitesmoke;
+  position: relative;
+  bottom: 200px;
+  left: 26px;
+  font-size: 30px;
+}
+.home-logo{
+  width: 50px;
+  position: relative;
+  bottom: 260px;
+  left: 269px;
+}
 .p-home {
   color: whitesmoke;
   font-size: 19px;
@@ -207,6 +220,33 @@ main {
   font-size: 16px;
   color: #222;
   text-align: center;
+}
+.hrH{
+  color: whitesmoke;
+  position: relative;
+  bottom: 300px;
+  width: 90%;
+  visibility: 50%;
+}
+.COM-content {
+  position: relative;
+  bottom: 70px;
+}
+.codenestlogo{
+  width: 100px;
+  position: relative;
+  bottom: 225px;
+  left: 640px;
+}
+.COM{
+  background-color: black;
+}
+.Com {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 300px;
 }
 
 /* FOOTER */
